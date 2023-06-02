@@ -213,19 +213,19 @@ body {
 
 .technology-categories-list {
   list-style: none;
-  padding: 10px;
   align-self: stretch;
   padding: 15px;
   display: flex;
   gap: 30px;
   flex-direction: column;
 }
+
 .technology-categories {
   display: flex;
   justify-content: space-between;
 }
+
 .technology-categories-active {
-  display: flex;
   flex-direction: column;
   gap: 36px;
 }
@@ -234,22 +234,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .technology-categories-title {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
 }
+
 .technology-categories-img {
   width: 24px;
   height: 24px;
 }
+
 .list-item {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .item {
   display: flex;
   align-items: center;
