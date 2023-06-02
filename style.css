@@ -22,7 +22,7 @@ body {
   height: 48px;
 }
 
-.logo span {
+.logo a {
   width: 76px;
   height: 20px;
   font-size: 18px;
@@ -31,6 +31,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .menu {
@@ -47,7 +48,7 @@ body {
   height: 24px;
 }
 
-.header {
+.main {
   background-image: url("./img/header-shapes\ mobile@2x.png");
   background-size: cover;
   background-position: center;
@@ -89,9 +90,14 @@ body {
 .social {
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 
-.social img {
+.social li {
+  list-style: none;
+}
+
+.social li a img {
   margin-right: 19px;
   width: 20px;
 }
