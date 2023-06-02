@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.navbar {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   height: 48px;
 }
 
-.logo a {
+.logo{
   width: 76px;
   height: 20px;
   font-size: 18px;
