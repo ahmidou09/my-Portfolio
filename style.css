@@ -80,15 +80,15 @@ body {
   margin-bottom: 12px;
 }
 
-.btn {
+.link {
   margin-bottom: 12px;
   color: #7f8cff;
-  background-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .social {
@@ -106,7 +106,7 @@ body {
   width: 20px;
 }
 
-.works-section {
+.my-recent-works-section {
   display: grid;
   grid-row-gap: 88px;
   padding: 200px 24px 110px 24px;
@@ -114,7 +114,7 @@ body {
   margin-top: -100px;
 }
 
-.card-works {
+.card-my-recent-works {
   grid-column: 1 / -1;
   background-color: #fff;
   display: flex;
@@ -165,7 +165,7 @@ body {
   border-radius: 50%;
 }
 
-.card-works p {
+.card-my-recent-works p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -211,60 +211,57 @@ body {
   gap: 12px;
 }
 
-.mb-1 {
-  margin-bottom: 0 !important;
-}
-
-.skill-list {
+.technology-categories-list {
+  list-style: none;
+  padding: 10px;
   align-self: stretch;
   padding: 15px;
   display: flex;
-  gap: 12px;
+  gap: 30px;
   flex-direction: column;
 }
-
-.languages {
+.technology-categories {
   display: flex;
   justify-content: space-between;
 }
+.technology-categories-active {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
 
-.languages-title {
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+.technology-categories-title {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
 }
-
-.languages-img {
+.technology-categories-img {
   width: 24px;
   height: 24px;
 }
-
-.langguage-list {
+.list-item {
   list-style: none;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-
 .item {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
   background: #f7f7f9;
   border-radius: 8px;
-  padding: 9px 12px;
+  padding: 9px 12px 9px 12px;
 }
 
-.langguage-list .item img {
+.list-item .item img {
   width: 48px;
   height: 48px;
   margin-right: 16px;
-}
-
-.langguage-list .item span {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
 }
 
 .b-border {
