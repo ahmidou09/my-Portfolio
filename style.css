@@ -174,11 +174,11 @@ body {
 
 .tags {
   list-style: none;
-  display: flex;
   margin-bottom: 20px;
 }
 
 .tags li {
+  float: left;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
