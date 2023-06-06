@@ -274,19 +274,19 @@ body {
 }
 
 .form-section {
- display: flex;
- flex-direction: column;
- background-color: rgba(96, 112, 255, 1);
- padding-top: 103px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(96, 112, 255, 1);
+  padding-top: 103px;
 }
 
 .heading-2 {
- color: white;
- font-weight: 700;
- font-size: 32px;
- line-height: 44px;
- padding: 0 10px 0 0;
- text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 10px 0 0;
+  text-align: center;
 }
 
 .form-para {
@@ -301,7 +301,7 @@ body {
 }
 
 form {
- width: 100%;
+  width: 100%;
 }
 
 .form-list {
