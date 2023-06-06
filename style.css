@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -271,4 +275,87 @@ body {
 .b-border {
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 23px;
+}
+
+/*  section form */
+
+.form-section {
+  background-color: rgba(96, 112, 255, 1);
+  background-image: url("./img/header-shapes\ mobile@2x.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding: 103px 24px 45px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100px 0 0 0;
+}
+
+.heading-2 {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 10px 0 0;
+  margin-bottom: 12px;
+}
+
+.form-para {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 52px;
+  text-align: center;
+}
+
+.form-list {
+  list-style: none;
+  padding: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-email,
+.form-name,
+.form-text {
+  font-family: "Poppins", sans-serif;
+  border-color: rgba(207, 216, 220, 1);
+  padding: 15px 38px 15px 16px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.form-email::placeholder,
+.form-name::placeholder,
+.form-text::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #b3bac5;
+}
+
+.form-email:focus,
+.form-name:focus,
+.form-text:focus {
+  outline: none;
+}
+
+.form-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+  background-color: white;
 }
