@@ -14,8 +14,12 @@ body {
 }
 
 .container {
-  max-width: 375px;
+  max-width: 768px;
   margin: 0 auto;
+}
+
+.v-disktop {
+  display: none;
 }
 
 .header {
@@ -54,12 +58,12 @@ body {
 
 .headline-section {
   background-image: url("./img/header-shapes\ mobile@2x.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
   height: 70vh;
   padding: 0 24px;
   border-radius: 0 0 0 90px;
@@ -68,7 +72,13 @@ body {
   position: relative;
 }
 
-.heading-1 {
+.headline-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-1,
+.heading-3 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
@@ -110,16 +120,21 @@ body {
   width: 20px;
 }
 
+.card-works-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  padding: 24px;
+}
+
 .my-recent-works-section {
-  display: grid;
-  grid-row-gap: 88px;
   padding: 200px 24px 110px 24px;
   background-color: #e5e5e540;
   margin-top: -100px;
 }
 
 .card-my-recent-works {
-  grid-column: 1 / -1;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -128,6 +143,7 @@ body {
   gap: 12px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  margin-bottom: 88px;
 }
 
 .snapshoot {
@@ -208,11 +224,9 @@ body {
 }
 
 .section-about {
+  padding: 114px 24px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  padding: 114px 24px;
-  gap: 12px;
 }
 
 .technology-categories-list {
@@ -232,6 +246,13 @@ body {
 .technology-categories-active {
   flex-direction: column;
   gap: 36px;
+}
+
+.section-about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
 }
 
 .categories {
@@ -281,6 +302,11 @@ body {
 
 .form-section {
   background-color: rgba(96, 112, 255, 1);
+  border-radius: 100px 0 0 0;
+  padding: 0;
+}
+
+.center {
   background-image: url("./img/form-background.png");
   background-size: 60%;
   background-repeat: no-repeat;
@@ -289,7 +315,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 100px 0 0 0;
 }
 
 .heading-2 {
@@ -358,4 +383,127 @@ body {
   border-radius: 8px;
   padding: 12px 16px 12px 16px;
   background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 1156px;
+  }
+
+  .v-mobile {
+    display: none;
+  }
+
+  .v-disktop {
+    display: block;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-item {
+    margin-right: 32px;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .headline-section {
+    background-image: url("./img/Header\ bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .headline-info {
+    padding: 0 60px;
+  }
+
+  .heading-1 {
+    width: 40%;
+  }
+
+  .para {
+    width: 100%;
+  }
+
+  .card-my-recent-works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 46px;
+    padding: 24px;
+  }
+
+  .card-img-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .card-img-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / 2;
+  }
+
+  .card-img-3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .card-img-4 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .card-works-info--2,
+  .card-works-info--4 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .section-about {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .section-about-info {
+    flex: 40%;
+  }
+
+  .technology-categories-list {
+    flex: 60%;
+  }
+
+  .mb-1 {
+    margin-bottom: 0;
+  }
+
+  .list-item {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .form-item {
+    text-align: center;
+  }
+
+  .form-section {
+    padding: 142px 74px 48px 75px;
+  }
+
+  .center {
+    background-image: url("./img/contact-form-background-disktop.png");
+    background-size: 100%;
+    background-position-x: center;
+  }
+
+  .form-para {
+    width: 63%;
+  }
 }
