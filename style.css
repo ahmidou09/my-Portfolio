@@ -364,6 +364,7 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #172b4d;
+  transition: all 0.2s;
 }
 
 .form-email::placeholder,
@@ -589,5 +590,11 @@ body {
     100% {
       transform: rotateX(0);
     }
+  }
+
+  .form-name:hover,
+  .form-email:hover,
+  .form-text:hover {
+    transform: translateX(4px);
   }
 }
