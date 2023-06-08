@@ -225,12 +225,14 @@ body {
   border-radius: 8px;
   padding: 12px;
   background-color: transparent;
-  transition: all 0.2s;
   cursor: pointer;
 }
 
 .section-about {
   padding: 114px 24px;
+}
+
+.about {
   display: flex;
   flex-direction: column;
 }
@@ -474,7 +476,7 @@ body {
     grid-row: 1 / 2;
   }
 
-  .section-about {
+  .about {
     flex-direction: row;
     gap: 24px;
   }
