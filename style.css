@@ -225,6 +225,7 @@ body {
   border-radius: 8px;
   padding: 12px;
   background-color: transparent;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -544,5 +545,31 @@ body {
     background-color: transparent;
     border: 1px solid #c1c7d0;
     cursor: none;
+  }
+
+  .snapshoot {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .snapshoot:hover {
+    transform: scale(1.05);
+  }
+
+  .fadeInOut {
+    animation: fadeInOutAnimation 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes fadeInOutAnimation {
+    0% {
+      opacity: 0;
+      transform: translate3d(-200px, 0, 0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 }
