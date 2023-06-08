@@ -225,6 +225,7 @@ body {
   border-radius: 8px;
   padding: 12px;
   background-color: transparent;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -363,6 +364,7 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #172b4d;
+  transition: all 0.2s;
 }
 
 .form-email::placeholder,
@@ -544,5 +546,55 @@ body {
     background-color: transparent;
     border: 1px solid #c1c7d0;
     cursor: none;
+  }
+
+  .snapshoot {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .snapshoot:hover {
+    transform: scale(1.05);
+  }
+
+  .fadeInOut {
+    animation: fadeInOutAnimation 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes fadeInOutAnimation {
+    0% {
+      opacity: 0;
+      transform: translate3d(-200px, 0, 0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .logo {
+    animation: rotates-logo 1s ease-in 1;
+  }
+
+  @keyframes rotates-logo {
+    0% {
+      transform: rotateX(0);
+    }
+
+    50% {
+      transform: rotateX(180deg);
+    }
+
+    100% {
+      transform: rotateX(0);
+    }
+  }
+
+  .form-name:hover,
+  .form-email:hover,
+  .form-text:hover {
+    transform: translateX(4px);
   }
 }
