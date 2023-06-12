@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -38,7 +39,11 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">Microverse</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://github.com/">GitHub</a></li>
+    <li><a href="https://www.figma.com/">Figma</a></li>
+    <li><a href="https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1">Figma Template</a></li>
   </ul>
 </details>
 
@@ -115,6 +120,13 @@ npx stylelint "**/*.{css,scss}" npx hint .
 - [ ] **[make website responsive]**
 - [ ] **[Adding more stylings]**
 - [ ] **[Implement Javascript]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://ahmidou09.github.io/my-Portfolio/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
