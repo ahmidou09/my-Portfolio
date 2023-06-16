@@ -32,6 +32,8 @@
 
 > **My Portfolio** Welcome to the The Portfolio Website is an impressive project made with HTML and CSS, showcasing your skills and creativity. It offers an opportunity to create a visually stunning portfolio with clean and well-structured code.
 
+[**Click to see the walkthrough of my project!**](https://www.loom.com/share/e0972c2f8def4f389f125fd973d4a51c?sid=0d6f96f7-e928-4637-99ac-ec7672fb3508)
+
 ## 🛠 Built With <a name="built-with">HTML AND CSS</a>
 
 ### Tech Stack <a name="tech-stack">EL MEHDI AHMIDOU</a>
