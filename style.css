@@ -37,7 +37,6 @@ body {
   left: 0;
   top: 0;
   background-color: rgba(34, 49, 210, 0.833);
-
   display: block;
 }
 
@@ -53,7 +52,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 

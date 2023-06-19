@@ -1,8 +1,8 @@
 const menu = document.querySelector(".toggleBtn");
 const nav = document.querySelector(".nav");
 
-menu.addEventListener("click", function () {
-  nav.classList.add("nav-active");
-  console.log("Hello");
-});
+const menuIcon = document.querySelector(".menu-icon");
 
+menuIcon.addEventListener("click", function () {
+  console.log("hello");
+});
