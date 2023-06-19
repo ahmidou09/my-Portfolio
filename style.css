@@ -57,6 +57,14 @@ body {
   text-decoration: none;
 }
 
+.nav {
+  display: none;
+}
+
+.toggle-Btn {
+  display: none;
+}
+
 .logo {
   width: 76px;
   height: 20px;
