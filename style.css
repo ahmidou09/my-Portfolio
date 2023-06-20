@@ -19,14 +19,26 @@ body {
   margin: 0 auto;
 }
 
+.overly {
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+}
+
 .nav {
   width: 100%;
   height: 100%;
-  background-color: #2230d2;
   position: absolute;
   left: 0;
-  bottom: 0;
   top: 0;
+  z-index: 2;
   display: none;
 }
 
@@ -40,9 +52,16 @@ body {
   list-style: none;
 }
 
-.nav-list a {
-  color: #dfe1e6;
+.nav-item {
+  margin-bottom: 40px;
+}
+
+.nav-list .nav-item a {
+  color: #fff;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .toggel-btn {
@@ -437,6 +456,10 @@ body {
     background-color: transparent;
   }
 
+  .overly {
+    display: none;
+  }
+
   .nav-list {
     list-style: none;
     display: flex;
@@ -445,9 +468,10 @@ body {
 
   .nav-item {
     margin-right: 32px;
+    margin-bottom: 0;
   }
 
-  .nav-item a {
+  .nav-list .nav-item a {
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;

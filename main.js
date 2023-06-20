@@ -2,9 +2,11 @@ const nav = document.querySelector('.nav');
 const toggelBtn = document.querySelector('.toggel-btn');
 const navItem = document.querySelectorAll('.nav-item');
 const menuIcon = document.querySelector('.menu-icon');
+const overly = document.querySelector('.overly');
 
 toggelBtn.addEventListener('click', () => {
   nav.classList.toggle('nav-active');
+  overly.classList.toggle('nav-active');
 
   if (nav.classList.contains('nav-active')) {
     menuIcon.src = './img/icon/close-icon.svg';
@@ -18,6 +20,7 @@ toggelBtn.addEventListener('click', () => {
 navItem.forEach((btn) => {
   btn.addEventListener('click', () => {
     nav.classList.remove('nav-active');
+    overly.classList.toggle('nav-active');
 
     if (nav.classList.contains('nav-active')) {
       menuIcon.src = './img/icon/close-icon.svg';
