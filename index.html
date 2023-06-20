@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
     <title>my portfolio</title>
   </head>
   <body>
@@ -18,22 +19,20 @@
     <header class="header">
       <div class="container navigation">
         <a class="logo" href="#">My Logo</a>
-        <nav class="v-mobile">
-          <div class="menu">
-            <img src="./img/icon/menu.svg" alt="menu icon" />
-          </div>
-        </nav>
+        <div class="menu toggel-btn">
+          <img src="./img/icon/menu.svg" alt="menu icon" class="menu-icon" />
+        </div>
 
-        <nav class="v-disktop">
+        <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -57,20 +56,31 @@
             <ul class="social">
               <li>
                 <a href="#"
-                  ><img src="./img/icon/tiwtter.svg" alt="tiwtter icon" tabindex="0"
+                  ><img
+                    src="./img/icon/tiwtter.svg"
+                    alt="tiwtter icon"
+                    tabindex="0"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="./img/icon/Linkedin icon.svg" alt="Linkedin icon" tabindex="0"
+                  ><img
+                    src="./img/icon/Linkedin icon.svg"
+                    alt="Linkedin icon"
+                    tabindex="0"
                 /></a>
               </li>
               <li>
-                <a href="#"><img src="./img/icon/m.svg" alt="m icon" tabindex="0"/></a>
+                <a href="#"
+                  ><img src="./img/icon/m.svg" alt="m icon" tabindex="0"
+                /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="./img/icon/github.svg" alt="github icon" tabindex="0"
+                  ><img
+                    src="./img/icon/github.svg"
+                    alt="github icon"
+                    tabindex="0"
                 /></a>
               </li>
               <li>
@@ -86,7 +96,7 @@
 
       <!--start my-recent-works section -->
 
-      <section class="my-recent-works-section">
+      <section class="my-recent-works-section" id="portfolio">
         <div class="container">
           <!--start card 1-->
           <div class="card-my-recent-works">
@@ -231,7 +241,7 @@
       <!--end my-recent-works section -->
 
       <!--start section about -->
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <div class="about">
             <div class="section-about-info">
@@ -248,28 +258,39 @@
               <ul class="social">
                 <li>
                   <a href="#"
-                    ><img src="./img/icon/tiwtter.svg" alt="tiwtter icon" tabindex="0"
+                    ><img
+                      src="./img/icon/tiwtter.svg"
+                      alt="tiwtter icon"
+                      tabindex="0"
                   /></a>
                 </li>
                 <li>
                   <a href="#"
                     ><img
                       src="./img/icon/Linkedin icon.svg"
-                      alt="Linkedin icon" 
+                      alt="Linkedin icon"
                       tabindex="0"
                   /></a>
                 </li>
                 <li>
-                  <a href="#"><img src="./img/icon/m.svg" alt="m icon" tabindex="0"/></a>
-                </li>
-                <li>
                   <a href="#"
-                    ><img src="./img/icon/github.svg" alt="github icon" tabindex="0"
+                    ><img src="./img/icon/m.svg" alt="m icon" tabindex="0"
                   /></a>
                 </li>
                 <li>
                   <a href="#"
-                    ><img src="./img/icon/hand.svg" alt="hand icon" tabindex="0"
+                    ><img
+                      src="./img/icon/github.svg"
+                      alt="github icon"
+                      tabindex="0"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/icon/hand.svg"
+                      alt="hand icon"
+                      tabindex="0"
                   /></a>
                 </li>
               </ul>
@@ -327,7 +348,7 @@
       <!--end section about -->
 
       <!--start section form -->
-      <section class="form-section">
+      <section class="form-section" id="contact">
         <div class="container">
           <div class="center">
             <h2 class="heading-2">Contact me</h2>
@@ -386,5 +407,6 @@
       </section>
       <!--end section form -->
     </main>
+    <div class="overly"></div>
   </body>
 </html>
