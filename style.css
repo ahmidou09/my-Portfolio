@@ -440,6 +440,21 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .detail {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    z-index: 9999;
+    background-color: white;
+    padding: 30px;
+  }
+
+  .popup-img {
+    width: 100%;
+  }
+
   .container {
     max-width: 1156px;
   }
@@ -457,7 +472,7 @@ body {
   }
 
   .overly {
-    display: none;
+    display: block;
   }
 
   .nav-list {
