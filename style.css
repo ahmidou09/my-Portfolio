@@ -32,21 +32,96 @@ body {
   display: none;
 }
 
-.text-window {
+/* start style for popup widow */
+
+.detail {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-color: white;
+  padding: 30px;
+  overflow: scroll !important;
+  display: none;
+}
+
+.clos-window {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.desciption-window {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
+}
+
+.text-window {
+  flex: 70%;
+}
+
+.tags-popup {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.popup-img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  margin-bottom: 59px;
 }
 
 .items-popup {
   margin-bottom: 30px;
 }
 
-.paragraph-1, .paragraph-2 {
+.paragraph-1 {
   margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 400;
 }
+
+.btn-popup {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-popup span {
+  margin-right: 5px;
+}
+
+.btn-popup a {
+  text-decoration: none;
+  color: #396df2;
+}
+
+/* end style for popup widow */
 
 .nav {
   width: 100%;
@@ -456,22 +531,30 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  /* style popup window */
   .detail {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 1100px;
-    height: 95vh;
+    width: 80%;
+    height: 95%;
     z-index: 9999;
     background-color: white;
     padding: 30px;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+  }
+
+  .desciption-window {
+    flex-direction: row;
+    gap: 50px;
   }
 
   .popup-img {
     width: 100%;
-    height: 45%;
-    object-fit: cover;
+    height: 50%;
   }
 
   .container {
@@ -488,10 +571,6 @@ body {
     height: auto;
     position: static;
     background-color: transparent;
-  }
-
-  .overly {
-    display: block;
   }
 
   .nav-list {
