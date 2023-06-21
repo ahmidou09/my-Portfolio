@@ -15,6 +15,8 @@ const data = [{
   image: './img/Snapshoot-Portfolio-popup.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   tags: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+  liveLink: '#',
+  sourceLink: '#',
 },
 {
   card: 2,
@@ -23,6 +25,8 @@ const data = [{
   image: './img/Snapshoot-Portfolio-popup.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   tags: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+  liveLink: '#',
+  sourceLink: '#',
 },
 {
   card: 3,
@@ -31,6 +35,8 @@ const data = [{
   image: './img/Snapshoot-Portfolio-popup.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   tags: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+  liveLink: '#',
+  sourceLink: '#',
 },
 {
   card: 4,
@@ -39,6 +45,8 @@ const data = [{
   image: './img/Snapshoot-Portfolio-popup.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   tags: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+  liveLink: '#',
+  sourceLink: '#',
 }];
 
 toggelBtn.addEventListener('click', () => {
@@ -107,14 +115,14 @@ seeProject.forEach((btn) => {
             </ul>
 
             <button type="button" class="btn-popup" tabindex="0">
-              <a href="#">
+              <a href=${data[i].liveLink}>
                 <span> See live</span>
                 <img src="./img/icon/export.svg" alt="github icon" tabindex="0"
               /></a>
             </button>
 
             <button type="button" class="btn-popup" tabindex="0">
-              <a href="#">
+              <a href=${data[i].sourceLink}>
                 <span>See source</span>
                 <img
                   src="./img/icon/github-popup.svg"
