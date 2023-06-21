@@ -377,7 +377,11 @@
               feature that you need built or a project that needs coding.
               <br />I’d love to help with it!
             </p>
-            <form action="https://formspree.io/f/mqkovyzn" method="post">
+            <form
+              action="https://formspree.io/f/mqkovyzn"
+              method="post"
+              id="form"
+            >
               <ul class="form-list">
                 <li class="form-item">
                   <label for="name"></label>
@@ -387,19 +391,19 @@
                     id="name"
                     class="form-name"
                     required
-                    placeholder="Lorem Ipsum"
+                    placeholder="Full Name"
                     maxlength="30"
                   />
                 </li>
                 <li class="form-item">
-                  <label for="mail"></label>
+                  <label for="email"></label>
                   <input
                     type="email"
                     name="userEmail"
-                    id="mail"
+                    id="email"
                     class="form-email"
                     required
-                    placeholder="loremipsum@gmail.com"
+                    placeholder="jhon@gmail.com"
                   />
                 </li>
                 <li class="form-item">
@@ -416,13 +420,18 @@
                   ></textarea>
                 </li>
                 <li class="form-item">
-                  <button type="submit" class="form-btn" tabindex="0">
+                  <button
+                    type="submit"
+                    class="form-btn"
+                    id="submit-form"
+                    tabindex="0"
+                  >
                     Get in touch
                   </button>
                 </li>
               </ul>
             </form>
-            <p class="error-message"><strong>ERROR!</strong> You should enter email in lowercase!</p>
+            <p class="error-message"></p>
           </div>
         </div>
       </section>
