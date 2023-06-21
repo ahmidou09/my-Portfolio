@@ -7,6 +7,9 @@ const closWindow = document.querySelector('.clos-window');
 const detail = document.querySelector('.detail');
 const seeProject = document.querySelectorAll('.see-project');
 const detailContainer = document.querySelector('.detail-container');
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.querySelector('.error-message');
 
 const data = [{
   card: 1,
@@ -144,4 +147,19 @@ closWindow.addEventListener('click', () => {
   detail.classList.remove('display-block');
   overly.classList.remove('display-block');
   detailContainer.innerHTML = '';
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = emailInput.value;
+  if (email !== email.toLowerCase()) {
+    errorMessage.innerHTML = '<strong>ERROR!</strong> You should enter email in lowercase!';
+    errorMessage.style.display = 'block';
+    return;
+  }
+
+  document.getElementById('form').submit();
+  document.querySelector('.form-name').value = '';
+  document.querySelector('.form-email').value = '';
+  document.querySelector('.form-text').value = '';
 });

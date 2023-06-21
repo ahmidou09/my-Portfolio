@@ -112,6 +112,12 @@ npx stylelint "**/*.{css,scss}" npx hint .
 - Twitter: [@el_ahmidou](https://twitter.com/el_ahmidou)
 - LinkedIn: [el mehdi ahmidou](https://www.linkedin.com/in/el-mehdi-ahmidou-312590125/)
 
+👤 **Author2**
+
+- GitHub: [@jcmunav63](https://github.com/jcmunav63)
+- Twitter: [@jcmunav63](https://twitter.com/jcmunav63)
+- LinkedIn: [@juan-carlos-muñoz-navarrete](https://www.linkedin.com/in/juan-carlos-mu%C3%B1oz-navarrete-5a15b6276/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
