@@ -123,7 +123,7 @@ body {
 
 /* end style for popup widow */
 
-/*style validate contact form*/
+/* style validate contact form */
 .error-message {
   color: red;
   font-family: "poppins", sans-serif;
@@ -136,7 +136,7 @@ body {
   display: none;
 }
 
-/*end validate contact form*/
+/* end validate contact form */
 
 .nav {
   width: 100%;
