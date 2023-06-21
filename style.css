@@ -124,6 +124,17 @@ body {
 /* end style for popup widow */
 
 /*style validate contact form*/
+.error-message {
+  color: red;
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 10px 50px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 100px;
+  display: none;
+}
 
 /*end validate contact form*/
 
