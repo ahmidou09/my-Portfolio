@@ -163,3 +163,35 @@ form.addEventListener('submit', (e) => {
   document.querySelector('.form-email').value = '';
   document.querySelector('.form-text').value = '';
 });
+
+form.addEventListener('input', () => {
+  const dataForm = {};
+  const dataFields = form.querySelectorAll('.dataForm');
+  dataFields.forEach((dataField) => {
+    dataForm[dataField.name] = dataField.value;
+  });
+
+  localStorage.setItem('dataForm', JSON.stringify(dataForm));
+});
+
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('dataForm'));
+
+  if (formData) {
+    Object.keys(formData);
+
+    Object.keys(formData).forEach((key) => {
+      const currentField = document.querySelector(`[name="${key}"]`);
+
+      if (currentField) {
+        currentField.value = formData[key];
+      }
+    });
+  }
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  localStorage.clear();
+  form.reset();
+});
