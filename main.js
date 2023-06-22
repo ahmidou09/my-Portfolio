@@ -163,3 +163,14 @@ form.addEventListener('submit', (e) => {
   document.querySelector('.form-email').value = '';
   document.querySelector('.form-text').value = '';
 });
+
+form.addEventListener('input', () => {
+  const dataForm = {};
+  const dataFields = form.querySelectorAll('.dataForm');
+  dataFields.forEach(dataField => {
+    dataForm[dataField.name] = dataField.value;
+  });
+
+  localStorage.setItem('dataForm', JSON.stringify(dataForm))
+  console.log(dataForm);
+});
