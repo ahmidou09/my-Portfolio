@@ -194,4 +194,4 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   localStorage.clear();
   form.reset();
-})
+});g
