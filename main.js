@@ -158,10 +158,8 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  document.getElementById('form').submit();
-  document.querySelector('.form-name').value = '';
-  document.querySelector('.form-email').value = '';
-  document.querySelector('.form-text').value = '';
+  localStorage.clear();
+  form.reset();
 });
 
 form.addEventListener('input', () => {
@@ -178,8 +176,6 @@ window.addEventListener('load', () => {
   const formData = JSON.parse(localStorage.getItem('dataForm'));
 
   if (formData) {
-    Object.keys(formData);
-
     Object.keys(formData).forEach((key) => {
       const currentField = document.querySelector(`[name="${key}"]`);
 
@@ -188,10 +184,4 @@ window.addEventListener('load', () => {
       }
     });
   }
-});
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  localStorage.clear();
-  form.reset();
 });
