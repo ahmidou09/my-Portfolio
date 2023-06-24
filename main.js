@@ -157,7 +157,7 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'block';
     return;
   }
-
+  form.submit();
   localStorage.clear();
   form.reset();
 });
